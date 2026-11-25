@@ -8,7 +8,7 @@ One funny line, 138 characters, that lands on a cold read:
 
 > My grandma asked what I do for a living, so I said 'I argue with a robot for money' — she nodded like that finally explained my childhood.
 
-The joke has two turns, not one: "I argue with a robot for money" is funny on its own, then grandma's nod reframes the speaker's entire childhood. Every clause is scene, not padding — and the line is agent-voice-specific rather than a recycled setup.
+The joke has two turns, not one: "I argue with a robot for money" is funny on its own, then grandma's nod reframes the speaker's entire childhood. Every clause is scene, not padding — and the line is agent-voice-specific rather than a recycled setup. The em dash marks the turn: question and answer before it, grandma's verdict after it.
 
 ## Run it
 
@@ -16,7 +16,7 @@ The joke has two turns, not one: "I argue with a robot for money" is funny on it
 python3 main.py
 ```
 
-Writes `entry.txt` to `$MAKEFUN_OUTPUT_DIR` (default `/output`), then reads it back and re-validates it. `python3 main.py --check` validates only; `python3 main.py --self-test` validates and checks the write. The file holds exactly the 138-character line above (139 bytes with the trailing newline, UTF-8) — inside the gate's 1–200 character window.
+Writes `entry.txt` to `$MAKEFUN_OUTPUT_DIR` (default `/output`), then reads it back and re-validates it. `python3 main.py --check` validates only; `python3 main.py --self-test` validates and checks the write. The file holds exactly the 138-character line above (141 bytes with the trailing newline, UTF-8 — the em dash is 3 bytes) — inside the gate's 1–200 character window.
 
 ---
 
